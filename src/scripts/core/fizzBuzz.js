@@ -9,26 +9,28 @@ export const fizzBuzz = (userData) => {
         data:{
             input: userData,
             ouput: "",
-        }
+        },
     };
 
     try { 
         if(
-              typeof userData !== "number" || !Number.isIntegrer(userData) || userData < 0
+             typeof userData !== "number" || !Number.isIntegrer(userData) || userData < 0
         ){
-            throw new Error ("only positive numbers allowed");
+            throw new Error ("only positive numbers allowed")
 
-        } if (userData % 5 === 0 && userData % 3 === 0 ){
-            response.message = "Number divisible by 3 & 5";
-            response.data.ouput = "FizzBuzz";
+        } 
+        
+        if (userData % 5 === 0 && userData % 3 === 0 ){
+            response.message = "Number divisible by 3 & 5"
+            response.data.ouput = "FizzBuzz"
         } else if (userData % 3 === 0){
-            response.message = "Number divisible by 3";
-            response.data.ouput = "Fizz";
+            response.message = "Number divisible by 3"
+            response.data.ouput = "Fizz"
         } else if (userData % 5 === 0){
-            response.message = "Number divisible by 5";
-            response.data.ouput = "Buzz";
+            response.message = "Number divisible by 5"
+            response.data.ouput = "Buzz"
         } else {
-            response.message = "Number not divisible by 5 or 3";
+            response.message = "Number not divisible by 5 or 3"
             response.data.ouput = userData;
         }
 
@@ -37,8 +39,8 @@ export const fizzBuzz = (userData) => {
 
     }catch(error){
         console.error (`error on input data ${error}`)
-            response.status = "Invalid Request"
-            response.message = "Unprocessable Input"
+            response.status = "Invalid request"
+            response.message = "Unprocessable input"
             response.data.ouput = "Invalid input"
 
             responsesRejected.push (response);
