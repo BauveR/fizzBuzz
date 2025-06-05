@@ -6,6 +6,6 @@ export const handleFormSubmit = (event) => {
     const input = document.querySelector("#userInput");
     const value = parseInt(input.value);
     const result = fizzBuzz(isNaN(value) ? input.value : value);
-    renderResult();
+    renderResult(result);
     input.value = "";
 };
