@@ -1,3 +1,4 @@
+import { responsesRejected } from "../data/results";
 
 
 export const fizzBuzz = (userData) => {
@@ -30,7 +31,7 @@ export const fizzBuzz = (userData) => {
             response.message = "Number not dividible by 5 or 3";
             response.data.ouput = userData;
         }
-
+        responsesOk.push (response);
         return response;
 
     }catch(error){
@@ -38,6 +39,8 @@ export const fizzBuzz = (userData) => {
             response.status = "Invalid Request"
             response.message = "Unprocessable Input"
             response.data.ouput = "Invalid input"
+
+            responsesRejected.push (response);
             return response;
     }
-}
+};
