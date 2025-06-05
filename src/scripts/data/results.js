@@ -1,4 +1,4 @@
 export const responsesOk = [];
 console.log (responsesOk);
-export const responsesRejected = [];
-console.log (responsesRejected);
+export const responsesReject = [];
+console.log (responsesReject);
