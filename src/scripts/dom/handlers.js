@@ -1,5 +1,5 @@
 import { fizzBuzz } from "../core/fizzBuzz.js";
-import { renderResult } from "./renders.js";
+import { renderResult } from "../dom/renders.js";
 
 export const handleFormSubmit = (event) => {
     event.preventDefault();
