@@ -2,7 +2,7 @@ import { expect, describe, test } from "@jest/globals";
 import { fizzBuzz } from "../src/scripts/core/fizzBuzz.js";
 
 describe('FizzBuzz test for multiples of 3 and 5', () => {
-       
+    
         test('Should return Fizz when is dividable by 3', () => {
         
             let valor_entrada = 9;
@@ -29,7 +29,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
                 status: "ok", 
                 message: "Number divisible by 5", 
                 data: {
-                    input: 9, 
+                    input: 10, 
                     output: "Buzz",
                 },
             };
@@ -46,7 +46,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
                 status: "ok", 
                 message: "Number divisible by 3 & 5", 
                 data: {
-                    input: 9, 
+                    input: 15, 
                     output: "FizzBuzz"
                 },
             };
