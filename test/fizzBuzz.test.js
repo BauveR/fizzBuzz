@@ -75,7 +75,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
         
             expect(typeof resultado.data.input).toBe("string"); 
             expect(resultado).toEqual(respuesta_esperada); 
-            expect(resultado.data.output).toBe( "FizzBuzz"); 
+            expect(resultado.data.output).toBe( "Unprocessable Input"); 
            
         });
     })
