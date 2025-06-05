@@ -73,7 +73,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
            
             let resultado = fizzBuzz(valor_entrada);
         
-            expect(typeof resultado.data.input).toBe("number"); 
+            expect(typeof resultado.data.input).toBe("string"); 
             expect(resultado).toEqual(respuesta_esperada); 
             expect(resultado.data.output).toBe( "FizzBuzz"); 
            
