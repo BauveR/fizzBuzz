@@ -64,7 +64,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
             let valor_entrada = "hey";
             let respuesta_esperada = {
                 status: "Invalid request", 
-                message: "Unprocessable Input", 
+                message: "Unprocessable input", 
                 data: {
                     input: "hey", 
                     output:"Invalid input",
@@ -75,7 +75,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
         
             expect(typeof resultado.data.input).toBe("string"); 
             expect(resultado).toEqual(respuesta_esperada); 
-            expect(resultado.data.output).toBe( "Unprocessable Input"); 
+            expect(resultado.data.output).toBe("Invalid input"); 
            
         });
     })

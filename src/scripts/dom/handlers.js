@@ -8,4 +8,4 @@ export const handleFormSubmit = (event) => {
     const result = fizzBuzz(isNaN(value) ? input.value : value);
     renderResult(result);
     input.value = "";
-};
+  };

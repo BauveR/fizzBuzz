@@ -1,6 +1,5 @@
 import { responsesOk, responsesReject } from "../data/results.js";
 
-
 export const fizzBuzz =  (userData) => {
     let response = {
         status: "ok",
